@@ -6,5 +6,17 @@ export default defineConfig({
   plugins: [tsconfigPaths(), react()],
   test: {
     environment: 'jsdom',
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'html', 'lcov'],
+      include: ['src/**/*.{ts,tsx}'],
+      exclude: [
+        'src/generated/**',
+        'src/components/ui/**',
+        'src/**/__tests__/**',
+        'src/app/**',
+        'src/middleware.ts',
+      ],
+    },
   },
 })
