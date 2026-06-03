@@ -1,0 +1,20 @@
+---
+name: pr-description
+description: Writes pull request descriptions. Use when create a PR, writing a PR , or when the user ask to summarise changes for a pull request.
+---
+
+When writing a PR description:
+
+1. Run 'git diff main..HEAD' to see all changes on this branch.
+2. Write a description following this format;
+
+## What
+One sentence what this PR does
+
+## Why 
+Brief context on why this change is needed
+
+## Changes
+-Bullet points of specfic changes made
+
+Keep description concise. Focus on what a reviewer needs to know.
